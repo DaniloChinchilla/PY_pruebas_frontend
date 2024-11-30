@@ -5,8 +5,8 @@ const HomePage = () => {
   return (
     <div>
       <Navbar />
-      <h1>Bienvenido a la página de inicio</h1>
-      <p>Esta es la página principal de tu aplicación.</p>
+      <h1>Bienvenido</h1>
+      <h2>Software de gestion de pruebas y control de calidad</h2>
     </div>
   );
 };
