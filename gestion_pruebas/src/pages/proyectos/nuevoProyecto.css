@@ -1,0 +1,21 @@
+.contenedor_formulario{
+    margin: 20px;
+}
+
+.contendorItem{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    width: 500px;
+    margin-left: 15px;
+}
+
+input{
+    width: 500px;
+}
+
+button{
+    margin-left: 200px;
+}

@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/navbar/navbar';
-import ModalNuevoProyecto from './modalNuevoProyecto';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import './proyectos.page.css';
 
 const ProyectosPage = () => {
 
     const [proyectos, setProyectos] = useState([]);
-    const [isOpen, setIsOpen] = useState(false);
 
-    const openModal = () => {
-        setIsOpen(true);
-    }
+    const navigate = useNavigate();
 
-    const closeModal = () => {
-        setIsOpen(false);
-    }
+    const rederigir = () => {
+        navigate("/nuevoproyecto");
+      };
 
     const fetchProeyctos = async () => {
         try {
@@ -37,7 +35,7 @@ const ProyectosPage = () => {
             <div className='contenedorPrincipal'>
 
             <div className='cntBoton'>
-                <button className='boton' onClick={openModal}>Nuevo Proyecto</button>
+                <button className='boton' onClick={rederigir}>Nuevo Proyecto</button>
             </div>
 
             <table border="1">
@@ -69,10 +67,6 @@ const ProyectosPage = () => {
                 </tbody>
             </table>
             </div>
-
-            {isOpen && (
-                <ModalNuevoProyecto closeModal={closeModal}/>
-            )}
         </div>
     )
 

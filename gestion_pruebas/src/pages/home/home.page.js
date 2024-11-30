@@ -5,8 +5,9 @@ const HomePage = () => {
   return (
     <div>
       <Navbar />
-      <h1>Bienvenido</h1>
-      <h2>Software de gestion de pruebas y control de calidad</h2>
+      <div className='contenedorPrincipal'>
+        <h1>Bienvenido</h1>
+      </div>
     </div>
   );
 };

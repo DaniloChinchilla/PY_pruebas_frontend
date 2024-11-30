@@ -1,0 +1,18 @@
+.cntBoton{
+    margin: 10px;
+}
+
+.contenedorPrincipal{
+    margin: 10px;
+}
+
+table{
+    margin: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-style: solid;
+}
+
+th{
+    padding: 5px;
+}
